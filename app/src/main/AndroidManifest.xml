@@ -34,7 +34,6 @@
         <activity android:name=".rxAndroid.RxAndroidActivity" />
         <activity android:name=".rxAndroid.asyncTask.ActivityRxAsyncTask" />
         <activity android:name=".okhttp.ActivityOkhttp" />
-        <activity android:name=".UtraPullToRefresh.ActivityUtraPullToReresh" />
         <activity
             android:name=".json.ActivityFastJson"
             android:label="fastJson" />

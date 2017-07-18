@@ -11,7 +11,6 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.langyang.xjl.wholetestdemo.R;
-import com.langyang.xjl.wholetestdemo.UtraPullToRefresh.ActivityUtraPullToReresh;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -35,7 +34,7 @@ public class WidgetFragment extends Fragment implements MyAdapter.ChildClickList
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
         recyclerView.setLayoutManager(linearLayoutManager);
         list=new ArrayList<>();
-        itemList=new String[]{"UltraPullToRefresh","ImageSwitcher","自定义组合控件"};
+        itemList=new String[]{"ImageSwitcher","自定义组合控件","自定义View"};
         for (String item:itemList) {
             list.add(item);
         }
@@ -49,14 +48,14 @@ public class WidgetFragment extends Fragment implements MyAdapter.ChildClickList
     @Override
     public void itemClick(RecyclerView parent, View view, int position, String data) {
         switch (data){
-            case "UltraPullToRefresh":
-                startActivity(new Intent(getContext(), ActivityUtraPullToReresh.class));
-                break;
             case "ImageSwitcher":
                 startActivity(new Intent(getContext(),ImageSwitcherActivity.class));
                 break;
             case "自定义组合控件":
 
+                break;
+            case "自定义View":
+                startActivity(new Intent(getContext(), com.example.xjl.customview.MainActivity.class));
                 break;
         }
     }

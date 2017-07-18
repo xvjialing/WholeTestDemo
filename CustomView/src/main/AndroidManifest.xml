@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.xjl.customview">
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+        </activity>
+        <activity android:name=".PieviewActivityActivity" />
+        <activity android:name=".CustomActivity" />
+        <activity android:name=".DrawPictureActivity" />
+        <activity android:name=".DrawBitmapActivity" />
+        <activity android:name=".DrawTextActivity" />
+        <activity android:name=".DrawPathActivity" />
+        <activity android:name=".ProgressActivity" />
+        <activity android:name=".PathNestActivity" />
+        <activity android:name=".SecondBezierActivity" />
+        <activity android:name=".Bezier2Activity" />
+        <activity android:name=".Bezier3Activity" />
+        <activity android:name=".PathMeasureActivity" />
+        <activity android:name=".PathViewActivity"></activity>
+    </application>
+
+</manifest>
